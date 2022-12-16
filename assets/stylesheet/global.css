@@ -28,6 +28,23 @@ a {
 img {
   width: 100%;
 }
+/* Typography */
+.heading__prim {
+  font-family: "Lora", serif;
+  font-weight: normal;
+  font-size: 3.6rem;
+}
+
+.heading__sec {
+  font-family: "Lora", serif;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.heading__ter {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
 
 .container {
   padding: 2rem 1rem;
@@ -100,5 +117,160 @@ img {
   opacity: 1;
   transform: scale(1);
 }
+/* Header */
+.header {
+  margin: 2rem 0;
+  padding-top: 1rem;
+}
 
+.header p {
+  margin: 1.5rem 0;
+  font-weight: 300;
+  font-style: normal;
+}
 
+.header__link {
+  display: flex;
+  align-items: center;
+}
+
+.header__arrow {
+  margin-left: 1rem;
+  font-size: 3rem;
+}
+/* Section */
+.section {
+  position: relative;
+}
+
+.info {
+  position: absolute;
+  bottom: -12rem;
+  right: 1rem;
+  z-index: 999;
+  background-color: #000;
+  padding: 2rem;
+  width: 250px;
+}
+
+.info__hero {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.info__photo {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.info__details {
+  margin-left: 1rem;
+}
+
+.info__details p {
+  color: #828282;
+}
+/* Footer */
+.footer {
+  margin-top: auto;
+  text-align: center;
+}
+
+.footer p {
+  font-weight: 600;
+  color: #a9a9a9;
+}
+
+@media (min-width: 768px) {
+  /* Navigation */
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav__burger {
+    font-size: 3rem;
+    display: none;
+  }
+  .nav__list {
+    position: initial;
+    width: initial;
+    height: initial;
+    background-color: transparent;
+    flex-direction: row;
+    justify-content: initial;
+    opacity: 1;
+    transform: scale(1);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+  .nav__item {
+    margin-left: 5rem;
+  }
+  .nav__menu-burger {
+    display: none;
+  }
+  .nav__item-link {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Typography */
+  .heading__prim {
+    font-size: 4.8rem;
+  }
+
+  .heading__sec {
+    font-size: 2.4rem;
+    width: 300px;
+  }
+
+  .heading__ter {
+    font-size: 1.4rem;
+  }
+
+  .container {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  .hero {
+    margin: 10rem 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* Header */
+  .sub__title {
+    font-size: 2.4rem;
+    width: 350px;
+    padding: 5rem 0;
+  }
+
+  .header__link-read {
+    font-size: 1.8rem;
+  }
+
+  /* Section */
+  .section {
+    width: 55%;
+  }
+
+  .info {
+    bottom: -15rem;
+    right: 3rem;
+    padding: 3rem;
+    width: 410px;
+  }
+
+  .info__hero {
+    margin-bottom: 2rem;
+  }
+
+  .info__details {
+    margin-left: 2rem;
+  }
+}
